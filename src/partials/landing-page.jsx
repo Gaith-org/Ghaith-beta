@@ -34,10 +34,10 @@ const landingPage = () => {
                    <h1 className='description'>بيت مال المسلمين للقرن الواحد و العشرين , أدخل بريدك الإلكتروني و كن أول من يعلم بإطلاق منصتنا !</h1> 
                    <form ref={form} onSubmit={sendEmail}>
                       <input type="email" id='email' name="user_email"value={email} onChange={(e) => setEmail(e.target.value)} placeholder='البريد الإكتروني' required/>
-                      <input type="submit" id='button' value="إرسال" />
+                      <input type='submit' id='button' value="إرسال" />
                     </form>
                    { msg && <span onClick={dismiss} className='message'><strong>تم إرسال طلبك بنجاح !</strong> (إضغط لإخفاء الإشعار)</span>}
-                   <div className="sm">تابعونا على <a href="https://www.linkedin.com/company/gaith-%D8%BA%D9%8A%D8%AB/"><img src={Linkedin} alt="linkedin-logo"/></a></div>
+                   <div className="sm">تابعونا على <a href="https://www.linkedin.com/company/gaith-%D8%BA%D9%8A%D8%AB/" target='_blank'><img src={Linkedin} alt="linkedin-logo"/></a></div>
                 </section>
                 <Footer/>
             </main>
