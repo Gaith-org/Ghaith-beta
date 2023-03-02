@@ -1,4 +1,4 @@
-import logo from '../assets/Ghaith-logo.png'
+import logo from '../assets/Ghaith-logo-temp.png'
 // import LazyLoad from 'react-lazy-load'
 // Lazy Loading the assets improves our web app performance and increases the SEO rate
 const Header = () => {
