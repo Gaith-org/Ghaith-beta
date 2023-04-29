@@ -1,8 +1,7 @@
-import { useRef } from 'react';
+import { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Header from './header';
 import Footer from './footer';
-import { useState } from 'react';
 import Linkedin from '../assets/linkedin.svg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
