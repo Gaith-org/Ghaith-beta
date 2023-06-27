@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ehsan-slogan{
+    font-size: 2.5em;
+    margin: 2em 0;
+}
+.article{
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+    padding: 2rem 0;
+}
+.article > section {
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    gap: 1em;
+}
+.article  h2 {
+    font-size: 2em;
+    color:var(--white)
+}
+.article p {
+    border: 1px dashed rgba(255, 255, 255, 1);
+    padding: 2.2rem;
+    font-size: 1.1em;
+    font-weight: 400;
+    width: 65%;
+    text-align: center;
+    color: var(--white);
+    direction: rtl;
+}
+.about-features > li{
+    padding: 3rem;
+    font-size: 1.1em;
+    text-align: center;
+    color: var(--white);
+    direction: rtl;
+    border-left: 1px dashed var(--white);
+}
+.verse{
+    width: auto;
+    filter:  brightness(0) invert(1);
+}
+.values{
+   display: flex;
+   width: 80vw;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.about-features{
+    margin-top:2rem ;
+    display: flex;
+    direction: rtl;
+    border-top: 1px dashed rgba(255, 255, 255, 1);
+    border-right: 1px dashed rgba(255, 255, 255, 1);
+    border-bottom: 1px dashed rgba(255, 255, 255, 1);
+    border-left: none;
+    justify-content: center;
+    align-items: center;
+}
+
+    
+@media screen and (width <= 768px)
+{
+.article h2 {
+    font-size: 1.7em;
+}
+.article p{
+    width: 85%;
+}
+.about-features{
+    flex-direction: column;
+    border-left: 1px dashed var(--white);
+    border-bottom: none;
+
+}
+.about-features li {
+    border-bottom: 1px dashed var(--white);
+    border-left: none;
+}
+}
+
+@media screen and (width <= 1028px)
+{
+.values{
+    width: 80vw;
+    flex-direction: column;
+}
+}

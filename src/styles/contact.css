@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contact{
+  background-color: var(--gray);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Tajawal';
+  gap: 1.5rem;
+  padding: 3rem;
+}
+.contact h2{
+  font-size: 2rem;
+  direction: rtl;
+}
+.contact p {
+  width: 60%;
+}
+.form-elements{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  direction: rtl;
+  width:40vw;
+}
+.element{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+label{
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+input,textarea,.submit-btn{
+  padding: 1em;
+  font-weight:500;
+  border: .7px solid var(--smokeBlack);
+  border-radius: 15px;
+}
+
+.submit-btn{
+  width: 50%;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: var(--primary);
+  color: var(--white);
+  transition: .3s ease;
+}
+.submit-btn:hover{
+  cursor: pointer;
+  background-color: var(--text);
+}
+.error{
+  text-align: right;
+  color: red;
+  margin-top: .5rem;
+  font-size: 1rem;
+}
+.toast{
+  color: var(--text);
+  font-family: 'Tajawal' !important;
+}
+
+
+@media screen and ( width <= 768px) {
+  .form-elements{
+    width: 70vw;
+  }
+  .contact p {
+    width:100%;
+  }
+}

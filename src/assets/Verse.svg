@@ -1,0 +1,14 @@
+<svg width="571" height="127" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with arbfonts.com - http://arbfonts.com -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="129" width="573" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text stroke="#000" transform="matrix(0.8350332962643093,0,0,0.8900302648544312,30.95344221316231,12.000152744622028) " xml:space="preserve" text-anchor="start" font-family="arbfonts, Arial, sans-serif" font-size="50" id="svg_1" y="81.44225" x="11.58814" stroke-width="0" fill="#027b6d">{لَن تَنَالُواْ ٱلۡبِرَّ حَتَّىٰ تُنفِقُواْ مِمَّا تُحِبُّونَۚ}</text>
+ </g>
+</svg>

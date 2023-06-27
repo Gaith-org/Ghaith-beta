@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.wrapper{
+    position: relative;
+    width:100%;
+    height: 100%;
+}
+.slogan{
+    position: absolute;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.wrapper h2 {
+    font-size: 3.5rem;
+    color: var(--white);
+}  
+.wrapper p {
+    font-size: 1.2rem;
+    width: 90%;
+    color: var(--white);
+    font-weight: 300;
+    direction: rtl;
+}
+.hero-img{
+    width:100vw;
+    height: auto;
+}
+.Quran-verse{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+}
+.Quran-verse img{
+    width: auto;
+    height: auto;
+}
+.cases-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray);
+}
+.cases-section h1{
+    color: var(--smokeBlack);
+    margin: 4rem 0 1rem 0;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-bottom: 3em;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary);
+    padding-bottom:2em ;
+}
+.features h2{
+    color: var(--white);
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    gap: 2rem;
+    padding: 3rem 0 ;
+    background-color: var(--white);
+    color: var(--text);
+    font-size: 1.5rem;
+}
+.cta h2 {
+    font-size: 2.2rem;
+}
+.cta-stats{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    align-items: self-start;
+    justify-content: space-evenly;
+    padding: 2rem;
+    width: 100%;
+}
+.cta-stats h1 {
+    font-size: 3rem;
+}
+
+
+
+     /* ---------- media queries ----------- */
+
+
+@media screen and (width <= 1280px){
+    .cards{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .slogan{
+        width: 90vw;
+        top: 50%;
+        left: 50%;
+    }
+}
+
+@media screen and ( 768px <= width <= 1280px){
+    .cards{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+@media screen and (768px <= width <= 1080px) {
+    .cta-stats{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3rem;
+    }
+}
+@media screen and (width <= 768px){
+    .slogan{
+        width: 95vw;
+        margin-top: 1rem;
+        top: 50%;
+        left: 50%;
+    }
+    .wrapper h2{
+        font-size: 2rem;
+    }
+    .cases-section h1{
+        width: 90%;
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .cta-stats{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 3rem;
+        }
+}
+@media screen and (width <= 700px){
+    .p-desc{
+        display:none;
+    }
+    .wrapper p {
+        font-size: .8rem;
+    }
+}

@@ -1,7 +1,7 @@
 import { useRef,useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Header from './header';
-import Footer from './footer';
+import Header from '../partials/header';
+import Footer from '../partials/footer';
 import Linkedin from '../assets/linkedin.svg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -33,8 +33,16 @@ const landingPage = () => {
       });
   };
     return ( 
+            <>
+            <head>
+              <meta charset="UTF-8" />
+              <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <meta name="description" content="ghaith is a nonprofit organization that seeks to connect donors with some of the most emergency cases " />
+              <meta name="keywords" content="nonprofit,غيث,Ghaith" />
+              <title>Ghaith - The Nonprofit For Everyone</title>
+            </head>
             <main>
-            <Header/>
                 <section className="landing">
                    <h1 className='coming-soon'>Coming Soon !</h1>
                    <h1 className='description'>بيت مال المسلمين للقرن الواحد و العشرين , أدخل بريدك الإلكتروني و كن أول من يعلم بإطلاق منصتنا !</h1> 
@@ -45,8 +53,8 @@ const landingPage = () => {
                     <ToastContainer />
                    <div className="sm">تابعونا على <a href="https://www.linkedin.com/company/gaith-%D8%BA%D9%8A%D8%AB/" target='_blank'><img src={Linkedin} alt="linkedin-logo"/></a></div>
                 </section>
-                <Footer/>
             </main>
+            </>
        
      );
 }
