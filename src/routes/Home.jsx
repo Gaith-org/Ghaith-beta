@@ -14,9 +14,9 @@ const [total,setTotal] = useState();
     useEffect(() => {
         const abortController = new AbortController();
         const signal = abortController.signal;
-        const endpoint = "https://ghaith-api.onrender.com/"
+        const endpoint = "https://ghaith-api.onrender.com/v1/cases/all"
         const fetchCases = async () => {
-          const res = await axios.get(`${endpoint}/v1/cases/all`,{signal})
+          const res = await axios.get(endpoint,{signal})
           const recent= res.data.data.slice(0,3);
             setCases(recent);
             setTotal(res.data.data.length)

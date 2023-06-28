@@ -1,8 +1,23 @@
 import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/case.css'
 
 const Case = ({caseItem}) => {
+  const showToast = () => {
+    toast.success('شكرا لك على تبرعك', {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      className:'toast'
+      });
+  }
     return ( 
    
     <article className="Case">
@@ -40,7 +55,8 @@ const Case = ({caseItem}) => {
                 <h2 className='title'>الشريك المنفذ</h2>
                 <h2> {caseItem.Partner ? caseItem.Partner : "لا يوجد"} </h2>
             </div>
-          <button className="donate-btn" type="submit">تسجيل التبرع</button>
+            <button className="donate-btn" onClick={showToast}>تسجيل التبرع</button>
+          <ToastContainer/>
         </section>
     </article>
      );

@@ -9,9 +9,9 @@ const Cases = () => {
     useEffect(() => {
         const abortController = new AbortController();
         const signal = abortController.signal;
-        const endpoint = "https://ghaith-api.onrender.com/"
+        const endpoint = "https://ghaith-api.onrender.com/v1/cases/all"
         const fetchCases = async () => {
-          const res = await axios.get(`${endpoint}/v1/cases/all`,{signal})
+          const res = await axios.get(endpoint,{signal})
             setCases(res.data.data);
           return abortController.abort();
         }
