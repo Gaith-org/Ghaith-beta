@@ -14,7 +14,7 @@ const [total,setTotal] = useState();
     useEffect(() => {
         const abortController = new AbortController();
         const signal = abortController.signal;
-        const endpoint = "https://ghaith-api.onrender.com/v1/cases/all"
+        const endpoint = "http://ec2-13-48-30-207.eu-north-1.compute.amazonaws.com:3100/v1"
         const fetchCases = async () => {
           const res = await axios.get(endpoint,{signal})
           const recent= res.data.data.slice(0,3);
