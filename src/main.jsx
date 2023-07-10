@@ -8,6 +8,9 @@ import './styles/index.css'
 import ContactForm from './routes/ContactForm.jsx'
 import About from "./routes/About.jsx"
 import Home from './routes/Home.jsx'
+import { inject } from '@vercel/analytics';
+ 
+inject();
 
 
 const routes = [
