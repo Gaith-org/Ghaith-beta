@@ -28,7 +28,7 @@ const [total,setTotal] = useState();
     return ( 
     <main>
         <section className="wrapper">
-            <img src={Bg} className='hero-img flex-1' alt="Man holding a plant" loading='lazy' />
+            <img src={Bg} className='hero-img flex-1' alt="Man holding a plant" loading='lazy' width="100%" height="75%" />
             <div className="slogan">
             <h2>بيت مال المسلمين للقرن الواحد و العشرين</h2>
             <p>قال رسول الله صلى الله عليه وسلم :مَن نَفَّسَ عن مُؤْمِنٍ كُرْبَةً مِن كُرَبِ الدُّنْيَا، نَفَّسَ اللَّهُ عنْه كُرْبَةً مِن كُرَبِ يَومِ القِيَامَةِ، وَمَن يَسَّرَ علَى مُعْسِرٍ، يَسَّرَ اللَّهُ عليه في الدُّنْيَا وَالآخِرَةِ، وَمَن سَتَرَ مُسْلِمًا، سَتَرَهُ اللَّهُ في الدُّنْيَا وَالآخِرَةِ، وَاللَّهُ في عَوْنِ العَبْدِ ما كانَ العَبْدُ في عَوْنِ أَخِيهِ .</p>

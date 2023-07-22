@@ -35,10 +35,6 @@
     font-weight: 300;
     direction: rtl;
 }
-.hero-img{
-    width:100vw;
-    height: auto;
-}
 .Quran-verse{
     display: flex;
     align-items: center;
