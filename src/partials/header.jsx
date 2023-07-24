@@ -15,7 +15,7 @@ const Header = () => {
            <li><NavLink className='navlink' to='/contact'>تواصل معنا</NavLink></li>
            </ul>
            </nav>
-           <Link className='img' to="/"><img src={logo} alt="Ghaith-logo" loading='lazy' width="100px" height="100px" /></Link>
+           <Link className='img' to="/"><img src={logo} alt="Ghaith-logo" loading='lazy' width="85px" height="auto" /></Link>
         </header>
     );
 }
